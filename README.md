@@ -9,4 +9,4 @@ A lightweight Kotlin JVM application creating charts based on blockchain address
  - Alexis "Alestrio" LEBEL (@Alestrio0)
  
 # License :
-This project is licensed under a GNU GPL V3.0 License.
+This project is licensed under a MIT License.
