@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d30dc8d1-4b2e-4cbd-a3a9-ad10ed25c98d" name="Default Changelist" comment="" />
+    <list default="true" id="d30dc8d1-4b2e-4cbd-a3a9-ad10ed25c98d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l10n/strings_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l10n/strings_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitcoinGraph.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/BitcoinGraph.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BitcoinGraph.iws" beforeDir="false" afterPath="$PROJECT_DIR$/BitcoinGraph.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/gui/Launcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/gui/Launcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/i18n.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/utils/i18n.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +100,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="KonanWorkspace">
     <executables />
   </component>
@@ -87,6 +116,7 @@
       <profile-state />
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -105,18 +135,31 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/utils" />
+      <recent name="$PROJECT_DIR$/src/l10n" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradlew idea " />
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MaintestKt">
+  <component name="RunManager" selected="TornadoFX.Launcher">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -144,7 +187,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BitcoinGraph [run]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+    <configuration name="BitcoinGraph [assemble]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,7 +198,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="run" />
+            <option value="assemble" />
           </list>
         </option>
         <option name="vmOptions" value="" />
@@ -199,12 +242,22 @@
         <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
+    <configuration name="Launcher" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" temporary="true" run-type="View" live-views="false" live-stylesheets="false" dump-stylesheets="false">
+      <option name="MAIN_CLASS_NAME" value="tornadofx.App" />
+      <module name="BitcoinGraph.main" />
+      <option name="VIEW_CLASS_NAME" value="com.alestrio.bitcoinchart.gui.Launcher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Gradle.BitcoinGraph [run]" />
+      <item itemvalue="Gradle.BitcoinGraph [assemble]" />
       <item itemvalue="Kotlin.MaintestKt" />
+      <item itemvalue="TornadoFX.Launcher" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TornadoFX.Launcher" />
         <item itemvalue="Kotlin.MaintestKt" />
       </list>
     </recent_temporary>
@@ -219,66 +272,106 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595156004295</updated>
-      <workItem from="1595156006398" duration="6714000" />
+      <workItem from="1595156006398" duration="7100000" />
+      <workItem from="1595225051117" duration="6519000" />
+      <workItem from="1596376914517" duration="72000" />
+      <workItem from="1596377009047" duration="129000" />
+      <workItem from="1596377157975" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595156244095">
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595230242959">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595156244095" />
-    <state x="803" y="453" width="314" height="202" key="Github.ShareDialog" timestamp="1595163234336">
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595230242959" />
+    <state x="461" y="478" width="997" height="153" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595231490784">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="803" y="453" width="314" height="202" key="Github.ShareDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595163234336" />
-    <state width="1874" height="277" key="GridCell.Tab.0.bottom" timestamp="1595162926649">
+    <state x="461" y="478" width="997" height="153" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595231490784" />
+    <state x="713" y="435" width="484" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1595231498452">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1595162926649" />
-    <state width="1874" height="277" key="GridCell.Tab.0.center" timestamp="1595162926647">
+    <state x="713" y="435" width="484" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.27.1920.1053@0.27.1920.1053" timestamp="1595231498452" />
+    <state x="679" y="436" width="541" height="239" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595225836096">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1595162926647" />
-    <state width="1874" height="277" key="GridCell.Tab.0.left" timestamp="1595162926646">
+    <state x="679" y="436" width="541" height="239" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595225836096" />
+    <state x="731" y="297" width="447" height="515" key="FileChooserDialogImpl" timestamp="1595163251207">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1595162926646" />
-    <state width="1874" height="277" key="GridCell.Tab.0.right" timestamp="1595162926648">
+    <state x="731" y="297" width="447" height="515" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1595163251207" />
+    <state x="803" y="453" width="314" height="202" key="Github.ShareDialog" timestamp="1595163298814">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1595162926648" />
-    <state width="1874" height="342" key="GridCell.Tab.1.bottom" timestamp="1595161642967">
+    <state x="803" y="453" width="314" height="202" key="Github.ShareDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595163298814" />
+    <state x="618" y="240" width="674" height="628" key="Github.UntrackedFilesDialog" timestamp="1595163334771">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="342" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1595161642967" />
-    <state width="1874" height="342" key="GridCell.Tab.1.center" timestamp="1595161642967">
+    <state x="618" y="240" width="674" height="628" key="Github.UntrackedFilesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595163334771" />
+    <state width="1874" height="277" key="GridCell.Tab.0.bottom" timestamp="1596377713129">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="342" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1595161642967" />
-    <state width="1874" height="342" key="GridCell.Tab.1.left" timestamp="1595161642967">
+    <state width="1874" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1596377713129" />
+    <state width="1874" height="277" key="GridCell.Tab.0.center" timestamp="1596377713128">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="342" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1595161642967" />
-    <state width="1874" height="342" key="GridCell.Tab.1.right" timestamp="1595161642967">
+    <state width="1874" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1596377713128" />
+    <state width="1874" height="277" key="GridCell.Tab.0.left" timestamp="1596377713128">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="342" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1595161642967" />
-    <state x="443" y="131" width="1024" height="847" key="SettingsEditor" timestamp="1595156147473">
+    <state width="1874" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1596377713128" />
+    <state width="1874" height="277" key="GridCell.Tab.0.right" timestamp="1596377713128">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595156147473" />
+    <state width="1874" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1596377713128" />
+    <state width="1874" height="342" key="GridCell.Tab.1.bottom" timestamp="1596377563228">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="342" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1596377563228" />
+    <state width="1874" height="342" key="GridCell.Tab.1.center" timestamp="1596377563227">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="342" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1596377563227" />
+    <state width="1874" height="342" key="GridCell.Tab.1.left" timestamp="1596377563227">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="342" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1596377563227" />
+    <state width="1874" height="342" key="GridCell.Tab.1.right" timestamp="1596377563228">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="342" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1596377563228" />
+    <state x="443" y="131" width="1272" height="847" key="SettingsEditor" timestamp="1596377126626">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="443" y="131" width="1272" height="847" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1596377126626" />
     <state width="960" height="526" key="XDebugger.FullValuePopup" timestamp="1595160716416">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="960" height="526" key="XDebugger.FullValuePopup/0.27.1920.1053@0.27.1920.1053" timestamp="1595160716416" />
+    <state x="731" y="468" width="458" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595163566557">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="731" y="468" width="458" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1595163566557" />
     <state x="624" y="253" width="672" height="677" key="run.anything.popup" timestamp="1595156315416">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -301,6 +394,21 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/charting/ChartCreator.kt</url>
           <line>35</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/utils/i18n.kt</url>
+          <line>30</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/utils/i18n.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/alestrio/bitcoinchart/utils/i18n.kt</url>
+          <line>37</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
