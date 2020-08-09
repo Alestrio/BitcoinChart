@@ -1,3 +1,4 @@
+/*Class creating the request to send to the remote service to create the chart*/
 package com.alestrio.bitcoinchart.charting
 
 import io.ktor.client.HttpClient

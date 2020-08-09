@@ -1,3 +1,4 @@
+/*Implementation of TreeNode intended to store wallets with outgoing transactions*/
 package com.alestrio.bitcoinchart.charting
 
 class TreeBranch (var startNode: ChartItem, isOrphan: Boolean) : TreeNode(isOrphan) {

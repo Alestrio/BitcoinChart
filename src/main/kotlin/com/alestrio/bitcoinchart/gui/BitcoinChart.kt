@@ -1,3 +1,4 @@
+/*Main app class*/
 package com.alestrio.bitcoinchart.gui
 
 import com.alestrio.bitcoinchart.gui.launcher.LauncherView

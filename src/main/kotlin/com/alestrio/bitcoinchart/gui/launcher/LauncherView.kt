@@ -1,11 +1,13 @@
+/*View class of the first window of the program intended to get user's directives such as address to probe, recurrences...*/
 package com.alestrio.bitcoinchart.gui.launcher
 
 import com.alestrio.bitcoinchart.utils.LanguageManager
 import javafx.beans.property.SimpleStringProperty
 import tornadofx.*
 
-private val i18n = LanguageManager()
-class LauncherView : View(i18n.getMessage("launcher_title")) {
+
+class LauncherView(private val i18n: LanguageManager = LanguageManager()) : View(i18n.getMessage("launcher_title")) {
+    // Controller and field variables
     private val controller : LauncherController by inject()
     private val addressInput = SimpleStringProperty()
 
@@ -19,11 +21,19 @@ class LauncherView : View(i18n.getMessage("launcher_title")) {
                 //Validation button
                 button(i18n.getMessage("validate")){
                     action {
-                        controller.executeQuery(addressInput.get())
+                        fun sanityCheck() : Boolean{
+                            /*Function checking if user input is everything but null and ready to be sent to the controller*/
+                            return when{
+                                addressInput.get() == null -> false
+                                else -> true
+                            }
+                        }
+                        if(sanityCheck()) controller.executeQuery(addressInput.get())
                     }
                 }
             }
         }
     }
+
 }
 

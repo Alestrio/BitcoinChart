@@ -1,3 +1,5 @@
+/*Implementation of TreeNode intended to store a single wallet (identified by it's address)
+without outgoing transactions (or limited by recurrences number)*/
 package com.alestrio.bitcoinchart.charting
 
 import java.lang.Exception
