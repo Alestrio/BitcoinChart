@@ -32,6 +32,7 @@ dependencies {
     implementation("no.tornado:tornadofx:1.7.20")
     implementation("io.ktor:ktor-client-core:$ktor_version")
     implementation("io.ktor:ktor-client-apache:$ktor_version")
+    implementation("com.beust:klaxon:5.0.1")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
