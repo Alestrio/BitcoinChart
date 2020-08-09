@@ -1,7 +1,6 @@
 package com.alestrio.bitcoinchart.utils
 
-import com.sun.org.apache.xerces.internal.parsers.DOMParser
-import java.io.File
+
 import java.io.FileInputStream
 import java.lang.NullPointerException
 import java.util.*
