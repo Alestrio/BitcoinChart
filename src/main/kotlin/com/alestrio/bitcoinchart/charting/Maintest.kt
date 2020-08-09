@@ -15,4 +15,5 @@ suspend fun main(args: Array<String>){
     var myChart = Chart("Test", chartContent, 1600, 1600)
     val creator = ChartCreator(myChart)
     creator.createChart()
+    print((branch.getlowLevelChartItems() as ArrayList<ChartItem>).toString())
 }

@@ -14,7 +14,7 @@ class TreeBranch (var startNode: ChartItem, isOrphan: Boolean) : TreeNode(isOrph
 
     }
 
-    /*Iterate through the tree and returns that content as à digraph-typed String*/
+    /*Iterate through the tree and returns that content as a digraph-typed String*/
     override fun iterate(): String {
         var digraphStructure = ""
         children.forEach { child ->
@@ -22,6 +22,16 @@ class TreeBranch (var startNode: ChartItem, isOrphan: Boolean) : TreeNode(isOrph
             digraphStructure += child.iterate() + ";"
         }
         return digraphStructure
+    }
+
+    override fun getlowLevelChartItems(): Any {
+        var deeperLevel = ArrayList<ChartItem>()
+        children.forEach {val temp = it.getlowLevelChartItems()
+            if (temp is ChartItem) deeperLevel.add(temp)
+            else if (temp is ArrayList<*>) deeperLevel.addAll(temp as Collection<ChartItem>)
+            else throw Exception("Type Error")
+            }
+        return if (deeperLevel.size == 1) deeperLevel[0] else deeperLevel
     }
 
 }
