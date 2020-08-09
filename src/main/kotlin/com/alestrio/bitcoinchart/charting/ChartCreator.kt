@@ -32,6 +32,7 @@ class ChartCreator(var chart: Chart) {
         return "$digraph}\""
     }
 
+    /*Sending request and saving response as a PNG*/
     suspend fun createChart(){
         val client = HttpClient()
         val response =  client.post<ByteArray>("https://quickchart.io/graphviz") {
@@ -41,6 +42,7 @@ class ChartCreator(var chart: Chart) {
         this.saveChart(response)
     }
 
+    /*Saving response as a png*/
     private fun saveChart(image: ByteArray){
         val imageFile = File("chart.png")
         if (!imageFile.exists()) imageFile.createNewFile()
@@ -49,10 +51,10 @@ class ChartCreator(var chart: Chart) {
             stream.write(image)
             stream.close()
         }catch(e:FileNotFoundException){
-            print("Fichier non trouve")
+            print("File not found")
         }
         catch (e:IOException){
-            print("Erreur d'ecriture")
+            print("Output error")
         }
 
     }
