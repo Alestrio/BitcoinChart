@@ -4,7 +4,7 @@ package com.alestrio.bitcoinchart.charting
 
 import java.lang.Exception
 
-class ChartItem(private var address: String, private var balance: Double, var name: String = "Unknown", isOrphan: Boolean) : TreeNode(isOrphan) {
+class ChartItem(var address: String, private var balance: Double, var name: String = "Unknown", isOrphan: Boolean = false) : TreeNode(isOrphan) {
 
     /* Returns that item as a digraph-typed String*/
     override fun iterate(): String {

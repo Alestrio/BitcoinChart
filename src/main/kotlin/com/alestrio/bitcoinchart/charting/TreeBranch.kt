@@ -1,7 +1,7 @@
 /*Implementation of TreeNode intended to store wallets with outgoing transactions*/
 package com.alestrio.bitcoinchart.charting
 
-class TreeBranch (var startNode: ChartItem, isOrphan: Boolean) : TreeNode(isOrphan) {
+class TreeBranch (var startNode: ChartItem, isOrphan: Boolean = false) : TreeNode(isOrphan) {
     var children: ArrayList<TreeNode> = ArrayList()
 
     /*Method to add a child to the branch*/
@@ -26,12 +26,14 @@ class TreeBranch (var startNode: ChartItem, isOrphan: Boolean) : TreeNode(isOrph
 
     override fun getlowLevelChartItems(): Any {
         var deeperLevel = ArrayList<ChartItem>()
-        children.forEach {val temp = it.getlowLevelChartItems()
-            if (temp is ChartItem) deeperLevel.add(temp)
-            else if (temp is ArrayList<*>) deeperLevel.addAll(temp as Collection<ChartItem>)
-            else throw Exception("Type Error")
+        children.forEach {val chose = it.getlowLevelChartItems()
+            when (chose) {
+                is ChartItem -> deeperLevel.add(chose)
+                is ArrayList<*> -> deeperLevel.addAll(chose as Collection<ChartItem>)
+                else -> throw Exception("Type Error")
             }
-        return if (deeperLevel.size == 1) deeperLevel[0] else deeperLevel
+            }
+        return if (deeperLevel.size == 1) deeperLevel[0] else if (deeperLevel.isEmpty()) this.startNode else deeperLevel
     }
 
 }
